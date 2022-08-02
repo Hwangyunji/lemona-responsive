@@ -1,0 +1,268 @@
+/* mobile.css */
+body {
+    /* background: orange; */
+    font-size: 14px;
+}
+
+section h2 {
+    font-size: 20px;
+}
+
+#toggle-btn {
+    border-style: none;
+    font-size: 24px;
+    background: transparent;
+    cursor: pointer;
+}
+
+/* .bi-list {
+    font-size: 18px;
+} */
+
+
+.container {
+    width: 100%;
+    /* max-width: 1440px;
+    margin: 0 auto; */
+    padding-left: 20px;
+    padding-right: 20px;
+    /* outline: 1px solid #333; */
+}
+
+#toggle-btn {
+    display: block;
+}
+
+#main-header {
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+}
+
+#main-header .container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: var(--mobile-header-height);
+}
+
+#gnb ul li {
+    display: block;
+}
+
+#gnb {
+    position: absolute;
+    left: 0;
+    top: var(--mobile-header-height);
+    background: #fff;
+    width: 100%;
+    border-top: 1px solid #ccc;
+    background: #ededed;
+}
+
+#gnb>ul {
+    padding: 20px;
+    font-size: 24px;
+}
+
+/* #gnb > ul > li {
+
+} */
+
+#gnb>ul>li>a {
+    display: block;
+    padding: 10px;
+}
+
+
+#main-header {
+    border-bottom: 1px solid #ccc;
+    position: fixed;
+    width: 100%;
+    height: var(--mobile-header-height);
+    background: #fff;
+}
+
+/* 모바일 로고 크기 */
+#main-header .container h1 img {
+    display: block;
+    width: 140px;
+}
+
+/* 토글 버튼 */
+#main-header nav {
+    display: none;
+}
+
+#main-header nav.on {
+    display: block;
+}
+
+
+/* 메인 비주얼 */
+#main-visual {
+    background: #fceead;
+    width: 100%;
+    height: calc(100vh - var(--mobile-header-height));
+    box-sizing: content-box;
+    padding-top: var(--mobile-header-height);
+}
+
+#main-visual .container {
+    display: block;
+    /* background: #ccc; */
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#main-visual .title {
+    /* outline: 1px solid #333; */
+    padding-top: 40px;
+}
+
+#main-visual .title h2 {
+    /* outline: 1px solid red; */
+    font-weight: 500;
+    font-size: 30px;
+    margin-bottom: 55px;
+    letter-spacing: 0.2em;
+}
+
+#main-visual .title p>span {
+    display: block;
+}
+
+#main-visual .title p>span:first-child {
+    font-weight: 500;
+    font-size: 24px;
+    letter-spacing: 0.3em;
+}
+
+#main-visual .title p>span:last-child {
+    font-weight: 500;
+    font-size: 38px;
+}
+
+#main-visual .img img {
+    width: 75%;
+}
+
+
+/* vitamin section */
+#main-section1 {
+    background: #fff;
+    height: calc(100vh - var(--mobile-header-height));
+}
+
+#main-section1 .container {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - var(--mobile-header-height));
+    padding: 0;
+}
+
+#main-section1 .container .col {
+    flex: 1;
+    /* outline: 1px solid #333;  */
+}
+
+#main-section1 .container .col:first-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-section1 .container .col:first-child img {
+    width: 90%;
+}
+
+#main-section1 .container .col:last-child {
+    background: var(--main-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#main-section1 .container .col:last-child h2 {
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+#main-section1 .container .col:last-child .sub-title {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#main-section1 .container .col:last-child p {
+    margin-bottom: 20px;
+}
+
+.detail-btn {
+    font-size: 16px;
+	width: 245px;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: var(--sub-color);
+	color: #fff;
+}
+
+
+
+#main-section2 {
+    height: calc(100vh - var(--mobile-header-height));
+}
+
+#main-section2 .container {
+    height: calc(100vh - var(--mobile-header-height));
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#main-section2 .container .col {
+    width: 100%;
+    height: 25%;
+    /* outline: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+	align-items: center;
+    text-align: center;
+    padding-top: 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+#main-section2 .container .col h2 {
+    font-size: 24px;
+    padding-bottom: 10px;
+}
+
+#main-section2 .container .col img {
+    display: none;
+}
+
+#main-section2 .container .col:first-child {
+    background: #FEC82F;
+    color: #000;
+}
+
+#main-section2 .container .col:nth-child(2) {
+    background-image: url(../images/history_bg.png);
+    background-position: center bottom;
+}
+#main-section2 .container .col:nth-child(3) {
+    background-image: url(../images/play_bg.png);
+}
+#main-section2 .container .col:nth-child(4) {
+    background-image: url(../images/faq_bg.png);
+}

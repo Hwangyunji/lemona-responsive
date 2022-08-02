@@ -1,0 +1,234 @@
+/* pc.css */
+body {
+    /* background: #ccc; */
+    font-size: 20PX;
+}
+
+section h2 {
+    font-size: 50px;
+}
+
+.container {
+    width: 100%;
+    /* max-width: 1440px;
+    margin: 0 auto; */
+    padding-left: 30px;
+    padding-right: 30px;
+    /* outline: 1px solid red; */
+}
+
+#toggle-btn {
+    display: none;
+}
+
+#main-header {
+    border-bottom: 1px solid #ccc;
+    position: fixed;
+    width: 100%;
+    height: var(--pc-header-height);
+    background: #fff;
+    z-index: 999;
+}
+
+#main-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+#gnb ul li {
+    display: inline-block;
+    margin-left: 140px;
+}
+
+/* 메뉴 간격 조정 */
+@media screen and (max-width: 910px){
+    #gnb ul li {
+        margin-left: 80px;
+    }
+}
+
+/* 메인 비주얼 */
+#main-visual {
+    background: #fceead;
+    width: 100%;
+    height: calc(100vh - var(--pc-header-height));
+    box-sizing: content-box;
+    padding-top: var(--pc-header-height);
+}
+
+#main-visual .container {
+    display: flex;
+    /* background: #ccc; */
+    height: 100%;
+}
+
+#main-visual .title {
+    flex: 1;
+    /* outline: 1px solid #333; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-visual .title h2 {
+    /* outline: 1px solid red; */
+    font-weight: 500;
+    font-size: 74.4828px;
+    line-height: 90px;
+    margin-bottom: 55px;
+    letter-spacing: 0.2em;
+}
+
+#main-visual .title p > span {
+    display: block;
+}
+
+#main-visual .title p > span:first-child {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 46px;
+    letter-spacing: 0.3em;
+}
+
+
+#main-visual .title p > span:last-child {
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 70px;
+}
+
+
+#main-visual .img {
+    flex: 1;
+    /* outline: 1px solid #333; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-visual .img img {
+    width: 75%;
+}
+
+
+/* vitamin section */
+#main-section1 {
+    background: #fff;
+    height: calc(100vh - var(--pc-header-height));
+}
+
+#main-section1 .container {
+    display: flex;
+    height: 100%;
+    padding: 0;
+}
+
+#main-section1 .container .col {
+    /* flex: 1; */
+    width: 50%;
+    /* outline: 1px solid #333;  */
+}
+
+#main-section1 .container .col:first-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-section1 .container .col:first-child img {
+    width: 70%;
+    display: block;
+}
+
+#main-section1 .container .col:last-child {
+    background: var(--main-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 75px;
+    padding-right: 30px;
+}
+
+#main-section1 .container .col:last-child h2 {
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+#main-section1 .container .col:last-child .sub-title {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+#main-section1 .container .col:last-child p {
+    margin-bottom: 40px;
+}
+
+.detail-btn {
+    font-size: 16px;
+	width: 245px;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: var(--sub-color);
+	color: #fff;
+}
+
+/* 2 X 2 레이아웃 */
+#main-section2 {
+    height: calc(100vh - var(--pc-header-height));
+}
+
+#main-section2 .container {
+    width: 100%;
+    height: calc(100vh - var(--pc-header-height));
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+#main-section2 .container .col {
+    /* outline: 1px solid red; */
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+	align-items: center;
+    text-align: center;
+    padding-top: 65px;
+    background: #ccc;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+#main-section2 .container .col h2 {
+    padding-bottom: 20px;
+}
+
+#main-section2 .container .col img {
+    padding-top: 50px;
+    width: 120px;
+}
+
+#main-section2 .container .col:first-child img {
+    width: 50%;
+}
+
+#main-section2 .container .col:first-child {
+    background: #FEC82F;
+    color: #000;
+}
+
+#main-section2 .container .col:nth-child(2) {
+    background-image: url(../images/history_bg.png);
+}
+#main-section2 .container .col:nth-child(3) {
+    background-image: url(../images/play_bg.png);
+}
+#main-section2 .container .col:nth-child(4) {
+    background-image: url(../images/faq_bg.png);
+}
